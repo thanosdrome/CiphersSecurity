@@ -3,6 +3,7 @@ import React from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 
+
 export const FrameByAnima = (): JSX.Element => {
   return (
     <section className="flex flex-col w-full max-w-[1280px] items-center gap-10 mx-auto my-20">
@@ -23,10 +24,10 @@ export const FrameByAnima = (): JSX.Element => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <h1 className="[font-family:'Cabinet_Grotesk-Regular',Helvetica] my-3 font-medium text-white text-[62px] leading-[64.4px]">
+            <h1 className="[font-family:'Cabinet_Grotesk',Helvetica] my-3 font-medium text-white text-[62px] leading-[64.4px]">
               Hack Your Way to a Career in Cybersecurity{" "}
             </h1>
-            <p className="text-2xl leading-[43.2px] text-white [font-family:'Cabinet_Grotesk-Regular',Helvetica]">
+            <p className="text-4xl leading-[43.2px] text-white [font-family:'Cabinet_Grotesk',Helvetica]">
               Learn, research, and grow with cutting-edge&nbsp;&nbsp;Cyber
               Security content.
             </p>
