@@ -8,7 +8,7 @@ import { FrameWrapperByAnima } from "./sections/FrameWrapperByAnima";
 export const SaasStyle = (): JSX.Element => {
   return (
     <div className="bg-[#050505] flex flex-row justify-center w-full">
-      <div className="bg-[#050505] overflow-hidden w-[1440px] relative">
+      <div className="bg-[#050505] overflow-hidden w-full relative">
         <div className="relative pt-4">
           {/* Top Navigation Bar */}
           <div className="flex items-center justify-between px-8 py-4">
@@ -38,8 +38,8 @@ export const SaasStyle = (): JSX.Element => {
           </div>
 
           {/* Right side abstract design */}
-          <div className="absolute w-[342px] h-[423px] top-0 right-0">
-            <div className="relative w-[377px] h-[423px] left-[-35px]">
+          <div className="absolute w-[342px] h-[423px] top-0 right-0 opacity-75">
+            <div className="relative w-[377px] h-[423px] left-[035px]">
               <img
                 className="absolute w-[302px] h-[324px] top-0 left-[75px]"
                 alt="Group"
@@ -90,7 +90,7 @@ export const SaasStyle = (): JSX.Element => {
 
             {/* Left side abstract design (properly mirrored) */}
 <div className="absolute w-[342px] h-[423px] top-0 left-0">
-  <div className="relative w-[377px] h-[423px] right-[-35px]">
+  <div className="relative w-[377px] h-[423px] right-[025px] opacity-75">
     <img
       className="absolute w-[302px] h-[324px] top-0 right-[75px] scale-x-[-1]"
       alt="Group"

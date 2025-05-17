@@ -61,9 +61,12 @@ export const DivWrapperByAnima = (): JSX.Element => {
   }, []);
 
   return (
-    <div className="flex flex-col w-full max-w-[1006px] items-center justify-center gap-5 mx-auto relative mt-30">
+    <div className=" flex flex-col w-full max-w-[1006px] items-center justify-center gap-5 mx-auto relative mt-30 ">
+       {/* Gradient masks for side fading */}
+  <div className="absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-[#050505] to-transparent"></div>
+  <div className="absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-[#050505] to-transparent"></div>
       {/* First row of tags */}
-      <div className="flex items-center justify-center relative self-stretch w-full flex-[0_0_auto] overflow-hidden">
+      <div className="flex items-center justify-center relative self-stretch w-full flex-[0_0_auto] overflow-hidden ">
         <div
           ref={topRowRef}
           className="flex items-center justify-start gap-5 py-2"
