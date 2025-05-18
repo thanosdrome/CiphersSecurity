@@ -1,0 +1,57 @@
+        .video-player {
+            width: 640px;
+            margin: 20px auto;
+            background: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .video-container {
+            width: 100%;
+            height: 360px;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        
+        .controls {
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            background: #333;
+        }
+        
+        .progress-bar {
+            height: 6px;
+            background: #555;
+            border-radius: 3px;
+            flex-grow: 1;
+            margin: 0 10px;
+            position: relative;
+        }
+        
+        .progress {
+            height: 100%;
+            width: 30%;
+            background: rgb(122, 122, 122);
+            border-radius: 3px;
+        }
+        
+        button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 8px;
+        }
+        
+        .time {
+            color: #ddd;
+            font-size: 14px;
+            margin: 0 10px;
+        }
