@@ -15,6 +15,14 @@ export const DivWrapperByAnima = (): JSX.Element => {
     "Footprint",
     "NMAP",
     "Walkthrough",
+    "Content Creation",
+    "Cryptography",
+    "IP Adress",
+    "Information Gathering",
+    "Reconnaissance",
+    "Scanning Network",
+    "Algorithm",
+    "App Development",
   ];
 
   const bottomRowTags = [
@@ -26,6 +34,13 @@ export const DivWrapperByAnima = (): JSX.Element => {
     "Scanning Network",
     "Algorithm",
     "App Development",
+    "Networking",
+    "Linux",
+    "Ethical Hacking",
+    "Try Hack Me",
+    "Footprint",
+    "NMAP",
+    "Walkthrough",
   ];
 
   useEffect(() => {
@@ -61,7 +76,7 @@ export const DivWrapperByAnima = (): JSX.Element => {
   }, []);
 
   return (
-    <div className=" flex flex-col w-full max-w-[1006px] items-center justify-center gap-5 mx-auto relative mt-30 ">
+    <div className=" flex flex-col w-full max-w-[1286px] items-center justify-center gap-5 mx-auto relative mt-30 ">
        {/* Gradient masks for side fading */}
   <div className="absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-[#050505] to-transparent"></div>
   <div className="absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-[#050505] to-transparent"></div>
@@ -78,11 +93,11 @@ export const DivWrapperByAnima = (): JSX.Element => {
               className="inline-flex items-center gap-2 px-4  bg-dark-04 rounded-[100px] border border-solid border-[#007aff] whitespace-nowrap"
               variant="outline"
             >
-              <div className="inline-flex items-center gap-3 p-1.5 rounded-[120px]">
-                <CheckIcon className="w-4 h-4 text-[#007aff]" />
+              <div className="inline-flex items-center gap-3 p-2 rounded-[120px]">
+                <CheckIcon className="w-5 h-5 text-[#007aff]" />
               </div>
               <span className="font-medium leading-6 [font-family:'Instrument_Sans',Helvetica] text-gray-70 text-base">
-                {tag}
+               <a href="#"> {tag}</a>
               </span>
             </Badge>
           ))}
@@ -102,8 +117,8 @@ export const DivWrapperByAnima = (): JSX.Element => {
               className="inline-flex items-center gap-2 px-4  bg-dark-04 rounded-[100px] border border-solid border-[#007aff] whitespace-nowrap"
               variant="outline"
             >
-              <div className="inline-flex items-center gap-3 p-1.5 rounded-[120px]">
-                <CheckIcon className="w-4 h-4 text-[#007aff]" />
+              <div className="inline-flex items-center gap-3 p-2 rounded-[120px]">
+                <CheckIcon className="w-5 h-5 text-[#007aff]" />
               </div>
               <span className="font-medium leading-6 [font-family:'Instrument_Sans',Helvetica] text-gray-70 text-base">
                 {tag}
