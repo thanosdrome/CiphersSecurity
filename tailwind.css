@@ -9,6 +9,7 @@
 
 :root {
   --absolutewhite: rgba(255, 255, 255, 1);
+  --dark-02: hwb(0 2% 98%);
   --dark-04: rgba(10, 10, 11, 1);
   --dark-08: rgba(19, 19, 21, 1);
   --dark-10: rgba(24, 24, 27, 1);
