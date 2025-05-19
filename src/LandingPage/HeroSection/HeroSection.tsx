@@ -1,8 +1,8 @@
-import { Badge } from "../../../../components/ui/badge";
-import { Button } from "../../../../components/ui/button";
+import { Badge } from "../../components/ui/badge";
+import { Button } from "../../components/ui/button";
 
 
-export const FrameByAnima = (): JSX.Element => {
+export const HeroSection = (): JSX.Element => {
   return (
     <section className="flex flex-col w-full max-w-[1280px] items-center gap-10 mx-auto my-20">
       <div className="flex flex-col items-center gap-4 w-full">
@@ -33,7 +33,7 @@ export const FrameByAnima = (): JSX.Element => {
         </div>
 
         <p className="max-w-[744px] [font-family:'Instrument_Sans',Helvetica] font-medium text-gray-70 text-base text-center leading-6">
-          Hacking is not mere exploitation of weaknesses; rather it is basically
+          Hacking is not mere exploitation of weaknesses; rather it is
           a systematic process comprising planning, reconnaissance,
           exploitation, and post-exploitation activities.
         </p>
