@@ -42,8 +42,12 @@ export const PostCard = (): JSX.Element => {
   }
 
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
-
   useEffect(() => {
+    const cached = localStorage.getItem("blogPosts");
+    if (cached) {
+      setBlogPosts(JSON.parse(cached));
+      return;
+    }
     fetch(
       "https://cipherssecurity.com/wp-json/wp/v2/posts?_embed&per_page=12"
     )
@@ -93,6 +97,7 @@ export const PostCard = (): JSX.Element => {
           };
         });
         setBlogPosts(posts);
+        localStorage.setItem("blogPosts", JSON.stringify(posts));
       });
   }, []);
   return (

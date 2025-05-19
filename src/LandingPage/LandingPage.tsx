@@ -4,6 +4,7 @@ import { Card, CardContent } from "../components/ui/card";
 import { TopicSlider } from "./TopicSlider";
 import { HeroSection } from "./HeroSection";
 import { NavBar } from "../NavBar";
+import GrowthChart from '../components/ui/GrowthChart';
 
 export const LandingPage = (): JSX.Element => {
   return (
@@ -61,11 +62,11 @@ export const LandingPage = (): JSX.Element => {
 
           <HeroSection />
           <img
-          className="absolute top-[420px] right-[350px]"
+          className=" float-animate absolute top-[420px] right-[350px]"
           src="/arrow_right.png"
           />
           {/* Join learners card */}
-          <div className="absolute top-[520px] right-[225px]">
+          <div className="float-animate absolute top-[520px] right-[225px]">
             <Card className="bg-dark-04 rounded-2xl border border-solid border-[#18181a] backdrop-blur-[2.56px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2.56px)_brightness(100%)]">
               <CardContent className="px-3.5 py-3">
                 <p className="[font-family:'Instrument_Sans',Helvetica] font-medium text-gray-70 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -75,11 +76,11 @@ export const LandingPage = (): JSX.Element => {
             </Card>
           </div>
           <img
-          className="absolute top-[420px] left-[350px]"
+          className="float-animate absolute top-[420px] left-[350px]"
           src="/arrow_left.png"
           />
           {/* Weekly Growth card */}
-          <Card className="absolute top-[470px] left-[225px] bg-dark-04 rounded-2xl border border-solid border-[#18181a] backdrop-blur-[2.56px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2.56px)_brightness(100%)]">
+          <Card className="float-animate absolute top-[470px] left-[225px] bg-dark-04 rounded-2xl border border-solid border-[#18181a] backdrop-blur-[2.56px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2.56px)_brightness(100%)]">
             <CardContent className="relative w-[175px] h-[154px] bg-dark-04 rounded-2xl overflow-hidden border border-solid border-[#18181a] backdrop-blur-[2.56px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2.56px)_brightness(100%)]">
               <div className="absolute top-[11px] left-3.5 [font-family:'Instrument_Sans',Helvetica] font-medium text-gray-70 text-base tracking-[0] leading-6 whitespace-nowrap">
                 Weekly Growth
@@ -96,12 +97,9 @@ export const LandingPage = (): JSX.Element => {
                   src="/arrow-1.svg"
                 />
               </div>
-
-              <img
-                className="absolute w-[146px] h-14 top-12 left-3.5"
-                alt="Vector"
-                src="/vector-585.svg"
-              />
+              <div className="absolute w-[146px] h-14 top-8 left-3.5">
+                <GrowthChart />
+              </div>
             </CardContent>
           </Card>
         </div>
