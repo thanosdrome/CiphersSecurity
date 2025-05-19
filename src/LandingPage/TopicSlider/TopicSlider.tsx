@@ -1,8 +1,8 @@
 import { CheckIcon } from "lucide-react";
-import React, { useEffect, useRef } from "react";
-import { Badge } from "../../../../components/ui/badge";
+import { useEffect, useRef } from "react";
+import { Badge } from "../../components/ui/badge";
 
-export const DivWrapperByAnima = (): JSX.Element => {
+export const TopicSlider = (): JSX.Element => {
   const topRowRef = useRef<HTMLDivElement>(null);
   const bottomRowRef = useRef<HTMLDivElement>(null);
 

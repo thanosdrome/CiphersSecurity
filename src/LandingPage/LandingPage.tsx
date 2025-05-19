@@ -1,11 +1,11 @@
-import React from "react";
-import { Button } from "../../components/ui/button";
-import { Card, CardContent } from "../../components/ui/card";
-import { DivWrapperByAnima } from "./sections/DivWrapperByAnima";
-import { FrameByAnima } from "./sections/FrameByAnima";
-import { FrameWrapperByAnima } from "./sections/FrameWrapperByAnima";
+// Project: Cipher Security
+import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { TopicSlider } from "./TopicSlider";
+import { HeroSection } from "./HeroSection";
+import { NavBar } from "../NavBar";
 
-export const SaasStyle = (): JSX.Element => {
+export const LandingPage = (): JSX.Element => {
   return (
     <div className="bg-[#050505] flex flex-row justify-center w-[vw]">
       <div className="bg-[#050505] overflow-hidden w-full relative">
@@ -27,7 +27,7 @@ export const SaasStyle = (): JSX.Element => {
             </div>
 
             {/* Navigation */}
-            <FrameWrapperByAnima />
+            <NavBar />
 
             {/* Sign In Button */}
             <Button className="h-[42px] z-10 px-6 py-2 rounded-[100px] [background:linear-gradient(180deg,rgba(92,132,254,0.18)_0%,rgba(0,122,255,1)_100%)]">
@@ -59,7 +59,7 @@ export const SaasStyle = (): JSX.Element => {
             </div>
           </div>
 
-          <FrameByAnima />
+          <HeroSection />
           <img
           className="absolute top-[420px] right-[350px]"
           src="/arrow_right.png"
@@ -106,7 +106,7 @@ export const SaasStyle = (): JSX.Element => {
           </Card>
         </div>
 
-        <DivWrapperByAnima />
+        <TopicSlider />
 
         <img
           className="w-[1215px] h-40 mx-auto mt-00 scale-[1.5]"
