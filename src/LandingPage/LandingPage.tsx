@@ -9,7 +9,7 @@ import GrowthChart from '../components/ui/GrowthChart';
 export const LandingPage = (): JSX.Element => {
   return (
     <div className="bg-[#050505] flex flex-row justify-center w-[vw]">
-      <div className="bg-[#050505] overflow-hidden w-full relative">
+      <div className="bg-[#050505]  overflow-hidden w-full relative">
         <div className="relative pt-4">
           {/* Top Navigation Bar */}
           <div className="flex items-center justify-between px-8 py-4">
@@ -62,11 +62,11 @@ export const LandingPage = (): JSX.Element => {
 
           <HeroSection />
           <img
-          className=" float-animate absolute top-[420px] right-[350px]"
+          className="max-md:hidden float-animate absolute top-[420px] right-[350px] "
           src="/arrow_right.png"
           />
           {/* Join learners card */}
-          <div className="float-animate absolute top-[520px] right-[225px]">
+          <div className="max-md:top-[720px] max-md:z-0 max-md:opacity-50 float-animate absolute top-[520px] right-[225px] max-md:top-[800px] md:right-[233px]">
             <Card className="bg-dark-04 rounded-2xl border border-solid border-[#18181a] backdrop-blur-[2.56px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2.56px)_brightness(100%)]">
               <CardContent className="px-3.5 py-3">
                 <p className="[font-family:'Instrument_Sans',Helvetica] font-medium text-gray-70 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -76,11 +76,11 @@ export const LandingPage = (): JSX.Element => {
             </Card>
           </div>
           <img
-          className="float-animate absolute top-[420px] left-[350px]"
+          className="max-md:hidden float-animate absolute top-[420px] left-[350px] "
           src="/arrow_left.png"
           />
           {/* Weekly Growth card */}
-          <Card className="float-animate absolute top-[470px] left-[225px] bg-dark-04 rounded-2xl border border-solid border-[#18181a] backdrop-blur-[2.56px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2.56px)_brightness(100%)]">
+          <Card className="max-md:top-[800px] max-md:z-0 max-md:opacity-50 float-animate absolute top-[470px] left-[225px] bg-dark-04 rounded-2xl border border-solid border-[#18181a] backdrop-blur-[2.56px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2.56px)_brightness(100%)]">
             <CardContent className="relative w-[175px] h-[154px] bg-dark-04 rounded-2xl overflow-hidden border border-solid border-[#18181a] backdrop-blur-[2.56px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2.56px)_brightness(100%)]">
               <div className="absolute top-[11px] left-3.5 [font-family:'Instrument_Sans',Helvetica] font-medium text-gray-70 text-base tracking-[0] leading-6 whitespace-nowrap">
                 Weekly Growth

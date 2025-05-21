@@ -22,24 +22,22 @@ export const HeroSection = (): JSX.Element => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <h1 className="[font-family:'Cabinet_Grotesk',Helvetica] my-3 font-medium text-white text-[62px] leading-[64.4px]">
+            <h1 className="[font-family:'Cabinet_Grotesk',Helvetica] my-3 font-medium text-white text-[62px] leading-[64.4px] text-justify">
               Hack Your Way to a Career in Cybersecurity{" "}
             </h1>
-            <p className="text-4xl leading-[43.2px] text-white [font-family:'Cabinet_Grotesk',Helvetica]">
+            <p className="max-md:text-3xl text-4xl  leading-[43.2px] text-white [font-family:'Cabinet_Grotesk',Helvetica] text-center">
               Learn, research, and grow with cutting-edge&nbsp;&nbsp;Cyber
               Security content.
             </p>
           </a>
         </div>
 
-        <p className="max-w-[744px] [font-family:'Instrument_Sans',Helvetica] font-medium text-gray-70 text-base text-center leading-6">
-          Hacking is not mere exploitation of weaknesses; rather it is
-          a systematic process comprising planning, reconnaissance,
-          exploitation, and post-exploitation activities.
+        <p className="z-10 max-w-[744px] [font-family:'Instrument_Sans',Helvetica] font-medium text-gray-70 text-base text-center leading-6 max-md:text-justify px-5">
+          Hacking is not mere exploitation of weaknesses; rather it is a systematic process comprising planning, reconnaissance, exploitation, and <span className="max-md:text-centre">post-exploitation activities.</span>
         </p>
       </div>
 
-      <Button className="h-[52px] my-10 px-6 py-4 rounded-[100px] [background:linear-gradient(180deg,rgba(92,132,254,0.18)_0%,rgba(0,122,255,1)_100%)]">
+      <Button className=" z-10 h-[52px] my-10 px-6 py-4 rounded-[100px] [background:linear-gradient(180deg,rgba(92,132,254,0.18)_0%,rgba(0,122,255,1)_100%)]">
         <span className="[font-family:'Instrument_Sans',Helvetica] font-medium text-absolutewhite text-lg leading-[25.2px]">
           Join Now
         </span>
