@@ -9,7 +9,7 @@ export const NavBar = (): JSX.Element => {
   ];
  
   return (
-    <Tabs className="left-1/2 -translate-x-1/2 absolute w-auto ">
+    <Tabs className="max-sm:hidden  left-1/2 -translate-x-1/2 absolute w-auto ">
       <TabsList className="flex gap-2 !px-1 !py-6 bg-dark-08 rounded-[100px] border-none border border-solid border-[#3d3d3d] backdrop-blur-[11.3px]">
         {navItems.map((item) => (
             <NavLink
