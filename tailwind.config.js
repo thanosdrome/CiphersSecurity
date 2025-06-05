@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "radial-gold":
+          "radial-gradient(circle,hsla(50, 100%, 95%, 1) 0%, hsla(50, 100%, 99%, 1) 100%)",
+      },
       colors: {
         absolutewhite: "var(--absolutewhite)",
         "dark-04": "var(--dark-04)",

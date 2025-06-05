@@ -4,7 +4,7 @@ import { Card, CardContent } from "../components/ui/card";
 import { TopicSlider } from "./TopicSlider";
 import { HeroSection } from "./HeroSection";
 import { NavBar } from "../NavBar";
-import GrowthChart from '../components/ui/GrowthChart';
+import GrowthChart from "../components/ui/GrowthChart";
 
 export const LandingPage = (): JSX.Element => {
   return (
@@ -19,7 +19,7 @@ export const LandingPage = (): JSX.Element => {
                 <img
                   className="w-6 h-6 object-contain"
                   alt="Isologo"
-                  src="/isologo-1.png"
+                  src="/ciphercross.svg"
                 />
               </div>
               <span className="[font-family:'Cabinet_Grotesk',Helvetica] font-normal text-white text-xl">
@@ -49,7 +49,7 @@ export const LandingPage = (): JSX.Element => {
             </div>
           </div>
 
-            {/* Left side abstract design (properly mirrored) */}
+          {/* Left side abstract design (properly mirrored) */}
           <div className="absolute w-[342px] h-[423px] top-0 left-0">
             <div className="relative w-[377px] h-[423px] right-[025px] opacity-75">
               <img
@@ -62,8 +62,8 @@ export const LandingPage = (): JSX.Element => {
 
           <HeroSection />
           <img
-          className="max-md:hidden float-animate absolute top-[420px] right-[350px] "
-          src="/arrow_right.png"
+            className="max-md:hidden float-animate absolute top-[420px] right-[350px] "
+            src="/arrow_right.png"
           />
           {/* Join learners card */}
           <div className="max-md:top-[720px] max-md:z-0 max-md:opacity-50 float-animate absolute top-[520px] right-[225px] max-md:top-[800px] md:right-[233px]">
@@ -76,8 +76,8 @@ export const LandingPage = (): JSX.Element => {
             </Card>
           </div>
           <img
-          className="max-md:hidden float-animate absolute top-[420px] left-[350px] "
-          src="/arrow_left.png"
+            className="max-md:hidden float-animate absolute top-[420px] left-[350px] "
+            src="/arrow_left.png"
           />
           {/* Weekly Growth card */}
           <Card className="max-md:top-[800px] max-md:z-0 max-md:opacity-50 float-animate absolute top-[470px] left-[225px] bg-dark-04 rounded-2xl border border-solid border-[#18181a] backdrop-blur-[2.56px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2.56px)_brightness(100%)]">
